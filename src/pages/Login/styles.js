@@ -23,6 +23,10 @@ p {
   color: #fff;
   font-size: 18px;
 }
+
+@media screen and (max-width: 767px){
+  display: none;
+}
 `;
 
 export const ContentBox = styled.div`
@@ -41,13 +45,29 @@ export const ContentLogin = styled.div`
 img {
     width: 150px;
 }
+
+@media screen and (max-width: 767px){
+  width: 100%;
+  background: #edaf0377;
+
+  h1 {
+  color: #0a3451;
+    font-size: 38px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px){
+  h1 {
+    display: none;
+  }
+}
 `;
 
 export const ContentForm = styled.div`
 
 button {
     width: 100%;
-    height: 47px;
+    height: 50px;
     background: #0a3451;
     color: #fff;
     align-items: center;
@@ -62,16 +82,17 @@ button {
 export const ContentUsuario = styled.div`
     width: 300px;
     display: flex;
-    border: 1px solid;
+    border: 1px solid #0a3451;
     margin-bottom: 10px;
-    height: 40px;
+    height: 50px;
+    background: #fff;
     justify-content: space-between;
     align-items: center;
     padding-right: 10px;
 
 input {
     width: 98%;
-    height: 38px;
+    height: 47px;
     border: transparent;
     padding-left: 10px;
     font-size: 18px;
@@ -81,16 +102,17 @@ input {
 export const ContentSenha = styled.div`
     width: 300px;
     display: flex;
-    border: 1px solid;
+    border: 1px solid #0a3451;
     margin-bottom: 10px;
-    height: 40px;
+    background: #fff;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     padding-right: 10px;
 
 input {
     width: 98%;
-    height: 38px;
+    height: 47px;
     border: transparent;
     padding-left: 10px;
     font-size: 18px;
