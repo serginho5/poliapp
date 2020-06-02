@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import StoreContext from '../../../components/Store/Context';
+import Context from '../../../components/Store/Context';
 
 const RoutesPrivate = ({ component: Component, ...rest }) => {
-  const { token } = useContext(StoreContext);
+  const { token } = useContext(Context);
+
+
 
   return (
     <Route

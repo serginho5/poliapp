@@ -10,15 +10,12 @@ function initialState() {
 
 const Login = () => {
   const [values, setValues] = useState(initialState);
-  const { signIn, valuesProvider } = useContext(Context);
+  const { signIn } = useContext(Context);
 
 
   async function handleRegister(e) {
     e.preventDefault();
-
     signIn({ values })
-
-    console.log(valuesProvider)
   }
 
   function onchange(event) {

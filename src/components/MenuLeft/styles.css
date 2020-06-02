@@ -1,0 +1,11 @@
+.MuiSvgIcon-root {
+  font-size: 2rem!important;
+}
+
+span.MuiButton-label {
+  color: #fff!important;
+}
+
+.MuiPaper-root.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiPaper-elevation16 {
+  background: #535254!important;
+}

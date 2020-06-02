@@ -10,7 +10,7 @@ const rotate = keyframes`
 
 export const Loader = styled.div`
    margin: auto;
-   height: 60vh;
+   height: 100vh;
    color: #333;
    font-size: 40px;
    display: flex;
